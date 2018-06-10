@@ -1,0 +1,38 @@
+<div>
+    <h1>Datos recientes</h1>
+
+    <div class="row" id="contenedor_graficas">
+        <div class="col s6 ">
+            <h5>Datos registrados</h5>
+            <p>(Último registro: {{datosEstado.fecha}}. Fuente: ThinkSpeak)</p>
+            <table id = "datos">
+                <thead>
+                    <tr>
+                        <th>Dato</th>
+                        <th>Valor</th>
+                    </tr>
+                </thead>
+
+                <tbody>
+                    <tr>
+                        <td>Temperatura</td>
+                        <td>{{datosEstado.temperatura}}</td>
+                    </tr>
+                    <tr>
+                        <td>Humedad</td>
+                        <td>{{datosEstado.humedad}}</td>
+                    </tr>
+                    <tr>
+                        <td>Luminosidad</td>
+                        <td>{{datosEstado.luminosidad}}</td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+        <div class="col s6 ">
+            <h5>Ventilador</h5>
+            <div id="grafica_2_2"></div>
+        </div>
+    </div>
+
+</div>
