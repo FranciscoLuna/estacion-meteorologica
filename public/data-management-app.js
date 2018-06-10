@@ -4,7 +4,7 @@ angular.module("DataManagementApp", ["ngRoute", "ngAnimate", "ui.bootstrap"]).co
         .when("/", {
             templateUrl: "main.html"
         })
-        .when("/graficas", {
+        .when("/grafica", {
             templateUrl: "grafica.html",
             controller: "GraficaCtrl"
         }).when("/estado", {

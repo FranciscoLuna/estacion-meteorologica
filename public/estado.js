@@ -137,7 +137,7 @@ angular.module("DataManagementApp")
                                         $scope.datosEstado.velocidad = calcSpeed(parseInt(datosRecientes.field4));
 
 
-                                        chart.setTitle(null, { text: 'Último registro: ' + $scope.datosEstado.velocidad + '. Fuente: ThinkSpeak' });
+                                        chart.setTitle(null, { text: 'Último registro: ' + $scope.datosEstado.fecha + '. Fuente: ThinkSpeak' });
                                         point.update($scope.datosEstado.velocidad);
                                     });
 

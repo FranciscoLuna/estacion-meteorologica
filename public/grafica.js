@@ -4,11 +4,11 @@ angular.module("DataManagementApp")
     .controller("GraficaCtrl", ["$scope", "$http", "$location", "$routeParams", function($scope, $http, $location, $routeParams) {
 
         $scope.data = {};
-
+        console.log("LLego aqui")
         $http.get("https://api.thingspeak.com/channels/510651/feeds.json").then(function(response) {
 
             $scope.data = response.data;
-
+            console.log("LLego aqui")
             var fecha = [];
             var hora = [];
             var listField1 = [];
@@ -26,7 +26,7 @@ angular.module("DataManagementApp")
                 fecha.push(fechaAux);
                 hora.push(fechaAux.getHours() + ":" + fechaAux.getMinutes());
             }
-
+            console.log("LLego aqui")
             Highcharts.chart('grafica_1', {
                 chart: {
                     zoomType: 'xy'
