@@ -147,9 +147,13 @@ angular.module("DataManagementApp")
             });
 
         function calcSpeed(speedCode) {
+            console.log(speedCode)
             var res = 0;
 
-            if (speedCode == 1) {
+            if (speedCode == 0) {
+                res = 0;
+            }
+            else if (speedCode == 1) {
                 res = 100;
             }
             else if (speedCode == 2) {
@@ -158,7 +162,7 @@ angular.module("DataManagementApp")
             else {
                 res = 255;
             }
-
+            console.log(res);
             return res;
         }
 
